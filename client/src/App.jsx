@@ -6,10 +6,12 @@ import Login from './pages/Login';
 import DashB from './pages/DashB';
 import Register from './pages/Register';
 import Projects from './pages/Projects';
+import Headers from './components/Headers';
 
 export default function App() {
   return (
     <BrowserRouter>
+      <Headers />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<AboutUs />} />
